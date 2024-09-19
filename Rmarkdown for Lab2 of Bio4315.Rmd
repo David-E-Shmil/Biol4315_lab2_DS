@@ -6,3 +6,12 @@ output: html_document
 ---
 
 # This is a Descriptive Header
+
+---
+Code chunk loading vegan and ggplot2
+---
+```{r, eval=FALSE, warning=FALSE, message=FALSE}
+library(vegan)
+library(ggplot2)
+
+```
