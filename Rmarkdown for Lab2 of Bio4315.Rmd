@@ -1,0 +1,7 @@
+---
+title: "Rmarkdown for Lab2 of Bio4315"
+author: "David Shmil"
+date: "2024-09-19"
+output: html_document
+---
+
