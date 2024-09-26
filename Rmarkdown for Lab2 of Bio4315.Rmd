@@ -13,5 +13,9 @@ Code chunk loading vegan and ggplot2
 ```{r, eval=FALSE, warning=FALSE, message=FALSE}
 library(vegan)
 library(ggplot2)
+#test
 
+```
+
+```{r}
 ```
