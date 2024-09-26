@@ -35,3 +35,14 @@ metaMDS_dune<-metaMDS(dune2)
 dpoints<-metaMDS_dune$points
 
 ```
+
+---
+Code chunk transforms dpoints into a dataframe and then uses ggplot to make a scatter plot using the MDS1 and MDS2 columns from dpoints with a black and white theme. Afterwards it saves the data as a pdf
+---
+```{r}
+data_frame_of_dpoints<-data.frame(dpoints)
+
+ggplot(data_frame_of_dpoints, aes(x= MDS1,y= MDS2))+geom_point()+theme_bw()+ggtitle(label="Scatter Plot of MDS1 vs MDS2")
+ggsave(filename = "Scatter Plot Lab 2.pdf")
+
+```
