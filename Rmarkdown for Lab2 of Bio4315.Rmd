@@ -26,3 +26,12 @@ dune2<-dune
 log_of_dune<-log1p(dune2)
 
 ```
+
+---
+Code chunk performing metaMDS on dune2 and then assigning the points to a variable called dpoints
+---
+```{r}
+metaMDS_dune<-metaMDS(dune2)
+dpoints<-metaMDS_dune$points
+
+```
