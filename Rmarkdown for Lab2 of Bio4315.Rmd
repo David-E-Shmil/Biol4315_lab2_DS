@@ -5,17 +5,24 @@ date: "2024-09-19"
 output: html_document
 ---
 
-# This is a Descriptive Header
+# This is a r markdown for lab 2
 
 ---
 Code chunk loading vegan and ggplot2
 ---
-```{r, eval=FALSE, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(vegan)
 library(ggplot2)
-#test
+
 
 ```
 
+---
+Code chunk loading dune data and then performing log on the data
+---
 ```{r}
+data(dune)
+dune2<-dune
+log_of_dune<-log1p(dune2)
+
 ```
